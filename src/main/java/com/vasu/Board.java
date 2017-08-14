@@ -10,7 +10,7 @@ class Board {
     }
 
     Boolean checkAntiDiagonalsLeadsToWin(int x, int y, char state) {
-        if (x + y == 2) {
+        if (x + y == n - 1) {
             for (int i = 0; i < n; i++) {
                 if (board[i][(n - 1) - i] != state)
                     break;
